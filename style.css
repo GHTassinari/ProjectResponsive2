@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+
+}
+
+:root {
+  font-family: 'Source Serif Pro';
+  font-size: 62.5% /* Allows to use the numbers of px in rem, dividing the px
+  by 10 */
+}
+body {
+  color: #A54328;
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 32rem;
+  margin-inline: auto; /* This one will create an equal distance
+  , centralizing to the right and left in the selected tag */
+
+  padding: 5.6rem 4rem;
+  box-sizing: content-box; /* The total size of the element is calculated,
+  including only the content inside, ignoring all the padding and border
+  applied */
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+img {
+  width: 100%; /* Adapting the img size to the resolution of the browser */
+  margin-block: 3.2rem; /* This adds a margin at the top and at the bottom */
+}
+button {
+  font-family: 'Source Serif 4';
+
+  color: #FFFFFF;
+
+  background-color: #A54328;
+
+  padding: 1.2rem;
+  border: 0;
+  border-radius: .6rem; /* There is no necessity of putting 0 before the .6 */
+
+  margin-top: 1.8rem;
+  margin-top: 3.2rem; /* Most of the margins will have 3.2 rem, as 
+  a form of keeping the design even */
+}
+
+h1, h2{
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
+h2{
+  margin-bottom: 3.2rem;
+}
+
+p, li, strong {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+ul, ol {
+  padding-left: 2.4rem;
+}
+
+ul {
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width: 1120px) {
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 16rem;
+
+    padding: 9rem 6rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  h1, h2{
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  p, li, strong {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
